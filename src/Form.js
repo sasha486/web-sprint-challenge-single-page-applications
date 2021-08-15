@@ -66,9 +66,12 @@ const OrderForm = () => {
         <h2 style={{ color: 'white', margin: '0 auto' }}>Perfect Your Pizza</h2>
 
         <CardImg
-          style={{ width: '70%', margin: '0 auto' }}
-          src={'./assets/pizza.jpg'}
-          alt = "pizza"
+          style={{ width: '70%', margin: '0 auto' , borderRadius: '20px', marginTop: '5px'}}
+          src={
+            'https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60' 
+          }
+          alt='pizza'
+        
         />
       </Card>
       <Form
@@ -134,7 +137,6 @@ const OrderForm = () => {
                 name='sauce'
                 value='pizza'
                 onChange={handleChange}
-              
               />
               Pizza
             </Label>
